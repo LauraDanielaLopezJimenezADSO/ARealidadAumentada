@@ -21,6 +21,8 @@ body {
     margin: 0;
 }
 
+/* pagina de inicio */
+
 .header {
     padding: 24px 0px 0px 18px;
     text-align: start;
@@ -33,7 +35,7 @@ body {
 
 .sectionTexto {
     text-align: center;
-    padding: 24px 18px;
+    padding: 35px 30px;
 }
 
 .sectionTexto__titulo {
@@ -65,14 +67,13 @@ body {
 
 .mascota {
     width: 80%;
-    max-width: 300px;
+    max-width: 400px;
     height: auto;
 }
 
 .interaccion{
     display: flex;
 }
-
 
 .relleno {
     background: var(--vinoTinto);
@@ -101,7 +102,7 @@ body {
 }
 
 .footer__texto {
-    font-size: 20px;
+    font-size: 24px;
     font-weight: bold;
     text-transform: uppercase;
 }
@@ -109,27 +110,33 @@ body {
 /* Estilos para movil */
 @media (min-width: 600px) {
     .contenedor {
-        max-width: 570px;
+        max-width: 600px;
         margin: 0 auto;
     }
 
     .header {
-        padding: 24px 0px 0px 24px;
+        padding: 24px;
         text-align: left;
     }
 
     .sectionImagen__cont{
         display: flex;
-        margin: 0px 18px 0px 18px;
+        margin: 40px 18px 0px 18px;
     }
 
+    /* .sectionTexto {
+        text-align: center;
+        padding: 35px 18px;
+    } */
+
     .sectionTexto__titulo {
-        font-size: 28px;
+        font-size: 32px;
+        padding: 24px 0px 0px 0px;
     }
 
     .mascota {
         width: 100%;
-        max-width: 346px;
+        max-width: 445px;
     }
 }
 
@@ -140,7 +147,7 @@ body {
     }
 
     .contenedor {
-        max-width: 720px;
+        max-width: 700px;
         margin: 0 auto;
     }
 
@@ -160,12 +167,13 @@ body {
 
     .mascota {
         width: 100%;
-        max-width: 445px;
-    }
-
-   
-
-    .footer__texto {
-        font-size: 32px;
+        max-width: 400px;
     }
 }
+
+
+/* pagina de catalogo */
+
+
+
+
