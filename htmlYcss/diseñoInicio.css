@@ -2,6 +2,7 @@
     --vinoTinto: #671C34;
     --verdeVivo: #3BAA00;
     --blanco: white;
+    --vinoHover: #DFACA2;
 }
 
 * {
@@ -43,6 +44,7 @@ body {
 
 .sectionTexto__titulo--sobresalir {
     font-weight: 800;
+    font-size: 26px;
 }
 
 .main {
@@ -58,8 +60,7 @@ body {
 
 .sectionImagen__cont{
     display: flex;
-    /* margin: 0px 18px 0px 18px; */
-    
+    margin: 0px 18px 0px 18px;
 }
 
 .mascota {
@@ -68,13 +69,29 @@ body {
     height: auto;
 }
 
-.interaccion .relleno {
-    background: #420619;
+.interaccion{
+    display: flex;
+}
+
+
+.relleno {
+    background: var(--vinoTinto);
     color: var(--blanco);
     border-radius: 50%;
     font-size: 40px;
     padding: 10px;
+    cursor: pointer;
+    transition: background 0.2s ease, transform 0.2s ease;
+    width: 60px;
+    height: 60px;
 }
+
+.relleno:hover {
+    background: var(--vinoHover);
+    transform: scale(1.1) translateY(-5px);
+}
+
+
 
 .footer {
     background: var(--vinoTinto);
@@ -89,7 +106,7 @@ body {
     text-transform: uppercase;
 }
 
-/* Styles for larger screens */
+/* Estilos para movil */
 @media (min-width: 600px) {
     .contenedor {
         max-width: 570px;
@@ -101,6 +118,11 @@ body {
         text-align: left;
     }
 
+    .sectionImagen__cont{
+        display: flex;
+        margin: 0px 18px 0px 18px;
+    }
+
     .sectionTexto__titulo {
         font-size: 28px;
     }
@@ -108,5 +130,42 @@ body {
     .mascota {
         width: 100%;
         max-width: 346px;
+    }
+}
+
+@media (min-width: 600px) and (max-width: 1024px) {
+    .logo {
+        width: 160px;
+        height: auto;
+    }
+
+    .contenedor {
+        max-width: 720px;
+        margin: 0 auto;
+    }
+
+    .header {
+        padding: 24px;
+        text-align: left;
+    }
+
+    .sectionImagen__cont{
+        display: flex;
+    }
+
+    .sectionTexto__titulo {
+        font-size: 32px;
+        padding: 24px 0px 0px 0px;
+    }
+
+    .mascota {
+        width: 100%;
+        max-width: 445px;
+    }
+
+   
+
+    .footer__texto {
+        font-size: 32px;
     }
 }
